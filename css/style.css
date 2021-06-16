@@ -76,9 +76,27 @@
 }
 
 p.result-set {
+  display: none;
+}
+
+p.result-invalid {
+  display: block;
   width: 100%;
   height: 23px;
   margin-top: 10px;
+  background: lightcoral;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 1px;
+}
 
-  display: none;
+p.result-valid {
+  display: block;
+  width: 100%;
+  height: 23px;
+  margin-top: 10px;
+  background: lightgreen;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 1px;
 }
