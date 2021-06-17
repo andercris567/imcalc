@@ -8,9 +8,11 @@ const isEmpty = (campo) => {
 
 const main = () => {
   const form = document.querySelector('.form');
+  const content2 = document.querySelector('.content-2');
   const peso = form.querySelector('#peso');
   const altura = form.querySelector('#altura');
   const resultSet = document.querySelector('.result-set');
+  const recalc = document.querySelector('a');
   const result = [
     'Abaixo do peso',
     'Peso normal',
@@ -61,9 +63,17 @@ const main = () => {
       }
     }
   };
+
   form.addEventListener('submit', function (evento) {
     evento.preventDefault();
     validaCampos();
+    content2.className = 'content-2-visible';
+  });
+
+  recalc.addEventListener('click', (evento) => {
+    evento.preventDefault();
+    content2.className = 'content-2-hide';
+    resultSet.className = 'result-set';
   });
 };
 
