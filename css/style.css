@@ -29,6 +29,30 @@ html {
   }
 }
 
+@media (max-width: 350px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 256px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 215px) {
+  html {
+    font-size: 4px;
+  }
+}
+
 .background {
   width: 100vw;
   height: 100vh;
