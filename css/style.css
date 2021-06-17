@@ -62,6 +62,7 @@ html {
   align-items: center;
   justify-content: center;
   background: lightseagreen;
+  max-height: 100vh;
 }
 
 .container {
